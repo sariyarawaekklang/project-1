@@ -1,0 +1,17 @@
+h1{
+    border-style: ridge;
+    border-color: blue;
+    background-color:blue;
+    text-align: center;
+    color: white;
+}
+
+#what{
+    display: flex;
+    gap: 200px;
+    align-items: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 30px;
+    align-items: baseline;
+}
+

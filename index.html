@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="./assets/css/style.css" />
+  <title>Language Translator</title>
+</head>
+
+<body>
+    <header>
+        <h1>Welcome to Language Translator!</h1>
+    </header>
+
+    <main>
+        <div id = "what">
+        <!-- input; language will be detected using APIs -->
+       <div class="from">
+            <label for="from">From: </label>
+            <textarea class="from-box" placeholder="Enter Text"></textarea>
+       </div>
+  <button type="button" class="btn">Translate!</button>
+       <!-- output -->
+       <div class="to">
+          
+        <label id="what2" for="to">To: </label>
+           <select class="language-options">
+               <!-- these will change, looking to see the options there are for languages -->
+                <option></option>
+                <option>English</option>
+                <option>Arabic</option>
+                <option>Chinese</option>
+                <option>Dutch</option>
+                <option>Finnish</option>
+                <option>French</option>
+                <option>German</option>
+                <option>Hindi</option>
+                <option>Hungarian</option>
+                <option>Indonesian</option>
+                <option>Irish</option>
+                <option>Italian</option>
+                <option>Japanese</option>
+                <option>Korean</option>
+                <option>Polish</option>
+                <option>Portuguese</option>
+                <option>Russian</option>
+                <option>Spanish</option>
+                <option>Swedish</option>
+                <option>Turkish</option>
+                <option>Ukranian</option>
+                <option>Vietnamese</option>
+            </select>
+            <div id="box2">
+           <textarea  class="to-box" placeholder="Translated Text"></textarea>
+           </div>
+       </div>
+     
+</div>
+       <!-- translate button -->
+       <div >
+         
+       </div>
+
+       <!-- search history -->
+       <div id="history-box">
+           <h3>Search History</h3>
+           <!-- list of search history -->
+           <ul></ul>
+           <!-- clear search history button -->
+           <a></a>
+       </div>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script> src ="./" </script>
+</body>
+
+</html>
