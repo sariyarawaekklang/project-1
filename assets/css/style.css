@@ -7,6 +7,7 @@ h1{
 }
 
 #what{
+    padding-left: 470px;
     display: flex;
     gap: 200px;
     align-items: center;
