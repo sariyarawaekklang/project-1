@@ -1,17 +1,10 @@
-var elem = $(".news-wrapper");
-var h3 = elem.find("h3var text = h3.text()");
-/* Replace this with your Google Translate API key */
-var myKey = 'AIzaSyDudT5fNA7WdUcHIf8QyZ8de4_z-wkqiP8';
-$.ajax({
-   method: 'GET',
-   url: 'https://www.googleapis.com/language/translate/v2/detect',
-   data: {
-      key: myKey,
-      q: text
-   }
-}).done(function (response) {
-   console.log(response.data.detections[0][0].language);
-   if (response.data.detections[0][0].language == 'ar') {
-      elem.addClass("news-arabic");
-   }
+
+var DetectLanguage = require('detectlanguage');
+
+var detectlanguage = new DetectLanguage('6ab09c2d3be1e7f3ac8d2d8c4e31fe02');
+
+var text = "can you send";
+
+detectlanguage.detect(text).then(function(result) {
+  console.log(JSON.stringify(result));
 });
