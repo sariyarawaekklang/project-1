@@ -10,63 +10,66 @@
 </head>
 
 <body>
-    <header>
-        <h1>Welcome to Language Translator!</h1>
-    </header>
+    <div>
+        <h1 class="header-title">Welcome to Language Translator!</h1>
+    </div>
 
-    <main>
-        <!-- input; language will be detected using APIs -->
-       <div class="from">
-            <label for="from">From: </label>
-            <textarea class="from-box" placeholder="Enter Text"></textarea>
-       </div>
+    <div class="main">
+        <form>
+            <!-- input; language will be detected using APIs -->
+            <div class="col-md-6 from">
+                <label for="from">From</label>
+                <textarea class="from-box" placeholder="Enter Text"></textarea>
+            </div>
 
-       <!-- output -->
-       <div class="to">
-           <label for="to">To: </label>
-           <select class="language-options">
-               <!-- these will change, looking to see the options there are for languages -->
-                <option></option>
-                <option>English</option>
-                <option>Arabic</option>
-                <option>Chinese</option>
-                <option>Dutch</option>
-                <option>Finnish</option>
-                <option>French</option>
-                <option>German</option>
-                <option>Hindi</option>
-                <option>Hungarian</option>
-                <option>Indonesian</option>
-                <option>Irish</option>
-                <option>Italian</option>
-                <option>Japanese</option>
-                <option>Korean</option>
-                <option>Polish</option>
-                <option>Portuguese</option>
-                <option>Russian</option>
-                <option>Spanish</option>
-                <option>Swedish</option>
-                <option>Turkish</option>
-                <option>Ukranian</option>
-                <option>Vietnamese</option>
-            </select>
-           <textarea class="to-box" placeholder="Translated Text"></textarea>
-       </div>
+            <!-- output -->
+            <div class="col-md-6 to">
+                <label for="to">To</label>
+                <!-- dropdown menu for language options -->
+                <select class="language-options">
+                    <option></option>
+                    <option>English</option>
+                    <option>Arabic</option>
+                    <option>Chinese</option>
+                    <option>Dutch</option>
+                    <option>Finnish</option>
+                    <option>French</option>
+                    <option>German</option>
+                    <option>Hindi</option>
+                    <option>Hungarian</option>
+                    <option>Indonesian</option>
+                    <option>Irish</option>
+                    <option>Italian</option>
+                    <option>Japanese</option>
+                    <option>Korean</option>
+                    <option>Polish</option>
+                    <option>Portuguese</option>
+                    <option>Russian</option>
+                    <option>Spanish</option>
+                    <option>Swedish</option>
+                    <option>Turkish</option>
+                    <option>Ukranian</option>
+                    <option>Vietnamese</option>
+                </select>
+                <textarea class="to-box" placeholder="Translated Text"></textarea>
+            </div>
 
-       <!-- translate button -->
-       <div>
-           <button type="button" class="btn">Translate!</button>
-       </div>
+            <!-- translate button -->
+            <div>
+                <button type="button" class="btn">Translate!</button>
+            </div>
+        </form>
+    </div>
+    
 
-       <!-- search history -->
-       <div>
-           <h3>Search History</h3>
-           <!-- list of search history -->
-           <ul></ul>
-           <!-- clear search history button -->
-           <a></a>
-       </div>
-    </main>
+    <!-- search history -->
+    <div>
+        <h3>Search History</h3>
+        <!-- list of search history -->
+        <ul></ul>
+        <!-- clear search history button -->
+        <a></a>
+    </div>
 </body>
 
 </html>
