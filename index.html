@@ -10,69 +10,62 @@
 </head>
 
 
-<body>
-    <header>
-        <h1>Welcome to Language Translator!</h1>
-    </header>
-
-    <main>
-        <div id="what">
+<body class="flex-column min-100-vh">
+    <div class="header">
+        <h1 class="header-title">Welcome to Language Translator!</h1>
+    </div>
+    <div class="main">
+        <div class="container" id="what">
             <!-- input; language will be detected using APIs -->
-            <div class="from">
-                <label for="from">From: </label>
-                <textarea class="from-box" placeholder="Enter Text"></textarea>
-            </div>
-            <button type="button" class="btn translate-button">Translate!</button>
-            <!-- output -->
-            <div class="to">
-
-                <label id="what2" for="to">To: </label>
-                <select class="language-options">
-                    <!-- these will change, looking to see the options there are for languages -->
-                    <option></option>
-                    <option>English</option>
-                    <option>Arabic</option>
-                    <option>Chinese</option>
-                    <option>Dutch</option>
-                    <option>Finnish</option>
-                    <option>French</option>
-                    <option>German</option>
-                    <option>Hindi</option>
-                    <option>Hungarian</option>
-                    <option>Indonesian</option>
-                    <option>Irish</option>
-                    <option>Italian</option>
-                    <option>Japanese</option>
-                    <option>Korean</option>
-                    <option>Polish</option>
-                    <option>Portuguese</option>
-                    <option>Russian</option>
-                    <option>Spanish</option>
-                    <option>Swedish</option>
-                    <option>Turkish</option>
-                    <option>Ukranian</option>
-                    <option>Vietnamese</option>
-                </select>
-                <div id="box2">
-                    <textarea class="to-box" placeholder="Translated Text"></textarea>
+            <form>
+                <div class="col-md-6 from">
+                    <div class="form-group">
+                        <label for="from">From</label>
+                        <input name="from" id="from" type="text" autofocus="true" class="from-input" placeholder="Enter Text" />
+                    </div>
                 </div>
-            </div>
 
+                <!-- output -->
+                <div class="col-md-6 to">
+                    <label class="to-label" id="what2" for="to">To</label>
+                    <!-- list of language options -->
+                    <select class="language-options">
+                        <option></option>
+                        <option>English</option>
+                        <option>Arabic</option>
+                        <option>Chinese</option>
+                        <option>Dutch</option>
+                        <option>Finnish</option>
+                        <option>French</option>
+                        <option>German</option>
+                        <option>Hindi</option>
+                        <option>Hungarian</option>
+                        <option>Indonesian</option>
+                        <option>Irish</option>
+                        <option>Italian</option>
+                        <option>Japanese</option>
+                        <option>Korean</option>
+                        <option>Polish</option>
+                        <option>Portuguese</option>
+                        <option>Russian</option>
+                        <option>Spanish</option>
+                        <option>Swedish</option>
+                        <option>Turkish</option>
+                        <option>Ukranian</option>
+                        <option>Vietnamese</option>
+                    </select>
+                    <div id="box2">
+                        <input name="from" id="from" type="text" autofocus="true" class="to-input" placeholder="Translated Text" />
+                    </div>
+                    <!-- translate button -->
+                    <div>
+                        <button type="button" class="btn translate-button">Translate!</button>
+                    </div>
+                </div>
+            </form>
         </div>
-        <!-- translate button -->
-        <div>
+    </div>
 
-        </div>
-
-        <!-- search history -->
-        <div id="history-box">
-            <h3>Search History</h3>
-            <!-- list of search history -->
-            <ul></ul>
-            <!-- clear search history button -->
-            <a></a>
-        </div>
-    </main>
     <script> src = "./assets/js/script.js"</script>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 
