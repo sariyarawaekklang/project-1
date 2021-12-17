@@ -1,19 +1,79 @@
-h1{
-    border-style: ridge;
-    border-color: blue;
-    background-color:blue;
+body {
+    padding-top: 60px;
+    width: 100%;
+    width: 100vw;
+    height: 550px;
+    background-color: lightblue;
+    font-family: "IBM Plex Sans", sans-serif;
+    line-height: 1.5;
+    font-size: 16px;
+}
+
+.header-title {
     text-align: center;
-    color: white;
+    color: black;
+    font-weight: 700;
+}
+
+.main {
+    padding-top: 40px;
+}
+
+.main,
+.col-md-6 {
+    width: 50%;
+}
+
+
+label {
+    font-size: 1.5em;
+    line-height: 1em;
+    font-weight: normal;
+}
+
+.form-group {
+    margin-top: 10px;
+}
+
+input {
+    font-size: 1.5em;
+    color: black;
+    height: 135px;
+}
+
+.btn {
+    font-size: 1.3rem;
+    text-decoration: none;
+    width: 50%;
+    display: block;
+    border-radius: .3rem;
+    color: lightblue;
+    border: none;
+    outline: none;
+    background-color: black;
+    box-shadow: 3px 3px white;
+}
+
+.btn:hover {
+    color: black;
+    font-weight: bolder;
+    background-color: skyblue;
+    transform: translate(0, 0);
+    box-shadow: 2px 2px grey;
 }
 
 #what{
-    padding-left: 470px;
+   gap: 500PX;
     display: flex;
-    gap: 200px;
-    align-items: center;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 30px;
-    align-items: baseline;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+.container{
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 400px;
 }
 
 
