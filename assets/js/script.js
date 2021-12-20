@@ -1,17 +1,22 @@
-var elem = $(".news-wrapper");
-var h3 = elem.find("h3var text = h3.text()");
-/* Replace this with your Google Translate API key */
-var myKey = 'AIzaSyDudT5fNA7WdUcHIf8QyZ8de4_z-wkqiP8';
-$.ajax({
-   method: 'GET',
-   url: 'https://www.googleapis.com/language/translate/v2/detect',
-   data: {
-      key: myKey,
-      q: text
-   }
-}).done(function (response) {
-   console.log(response.data.detections[0][0].language);
-   if (response.data.detections[0][0].language == 'ar') {
-      elem.addClass("news-arabic");
-   }
-});
+function getLanguage() {
+  var apikey = "6ab09c2d3be1e7f3ac8d2d8c4e31fe02"
+  var text = document.getElementById("#get-language").value;
+  console.log(text)
+  var url = "https://ws.detectlanguage.com/0.2/detect?q=" + text + "&key=" + apikey
+  fetch(url, {
+      method: "POST",
+      header: { "Content-Type": "application/json" }
+  })
+      .then(res => res.json())
+      .then(data => console.log(data))
+}
+getLanguage()
+
+
+function other(){
+    var textel = document.getElementById("get-language").value
+   
+}
+document.getElementsByClassName("translate-button").addEventListener("click", getLanguage()
+
+

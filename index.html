@@ -15,19 +15,19 @@
         <h1 class="header-title">Welcome to Language Translator!</h1>
     </div>
     <div class="main">
-        <div class="container" id="what">
+        <div class="container">
             <!-- input; language will be detected using APIs -->
-            <form>
+            <form id="what">
                 <div class="col-md-6 from">
                     <div class="form-group">
-                        <label for="from">From</label>
-                        <input name="from" id="from" type="text" autofocus="true" class="from-input" placeholder="Enter Text" />
+                        <label for="from">From</label> <div id="show_lang_in_here"></div>
+                        <input name="form" id="get-language" type="text" autofocus="true" class="from-input" placeholder="Enter Text" />
                     </div>
                 </div>
 
                 <!-- output -->
                 <div class="col-md-6 to">
-                    <label class="to-label" id="what2" for="to">To</label>
+                    <label class="to-label" for="to">To</label>
                     <!-- list of language options -->
                     <select class="language-options">
                         <option></option>
@@ -66,8 +66,9 @@
         </div>
     </div>
 
-    <script> src = "./assets/js/script.js"</script>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src = "./assets/js/script.js"></script>
+    
 
 </body>
 
